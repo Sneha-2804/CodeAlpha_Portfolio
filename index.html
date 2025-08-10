@@ -8,72 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <title>Portfolio Page</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: "Poppins", sans-serif;
-      background-color: rgb(0, 0, 33);
-      color: white;
-    }
-
-    nav{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 80px;
-      background-color: rgb(35, 35, 96);
-    }
-
-    nav ul{
-      display: flex;
-      justify-content: center;
-    }
-
-    
-    nav ul li{
-      list-style: none;
-      margin: 0 23px;
-    }
-
-    nav ul li a{
-      text-decoration: none;
-      color: white;
-    }
-
-    nav ul li a:hover{
-      opacity: 0.7;
-      font-size: 1.01rem;
-    }
-
-    .left{
-      font-size: 1.5rem;
-    }
-
-    .firstSection{
-      display: flex;
-      justify-content: space-around;
-      margin: 80px 0;
-      align-items: center;
-    }
-
-    .firstSection > div{
-      width: 30%;
-    }
-
-    .leftSection{
-      font-size: 2.5rem;
-    }
-
-    span{
-      color: rgb(156, 119, 191);
-    }
-
-
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -98,15 +33,92 @@
     <section class="firstSection">
       <div class="leftSection">Hi, My name is <span>Sneha</span>
         <div>
-          and I am a passionate <div>Web Developer</div>
+          and I am a passionate
+          <span id="element"></span>
+        </div>
+        <div class="button-container">
+          <a href="SnehaResume.pdf" class="btn" download>Download Resume</a>
+          <a href="https://github.com/Sneha-2804" class="btn1" target="_blank">Visit GitHub</a>
+
         </div>
       </div>
       <div class="rightSection">
-        <img src="bg.webp" alt="ME"/>
+        <img src="bg.webp" alt="ME" />
+      </div>
+    </section>
+    <hr>
+    <section class="secondSection">
+      <span class="text-gray">What I have done so far</span>
+      <h1>Work Experience</h1>
+
+      <div class="box">
+        <div class="vertical">
+          <img class="image-top" src="html.png" alt="html" />
+          <div class="vertical-title">HTML Developer (2023-2025)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ipsum
+            dignissimos. Ratione, voluptatum consectetur. Rerum, praesentium obcaecati? Error labore quasi voluptatibus
+            vitae. Unde maxime dignissimos ex! Quos optio sapiente a!
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="node.png" alt="html" />
+          <div class="vertical-title">Node JS Developer (2023-2025)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ipsum
+            dignissimos. Ratione, voluptatum consectetur. Rerum, praesentium obcaecati? Error labore quasi voluptatibus
+            vitae. Unde maxime dignissimos ex! Quos optio sapiente a!
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="spotify.png" alt="html" />
+          <div class="vertical-title">Spotify-Clone HTML (2023-2025)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ipsum
+            dignissimos. Ratione, voluptatum consectetur. Rerum, praesentium obcaecati? Error labore quasi voluptatibus
+            vitae. Unde maxime dignissimos ex! Quos optio sapiente a!
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="simon.png" alt="html" />
+          <div class="vertical-title">Simon Game JS (2023-2025)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ipsum
+            dignissimos. Ratione, voluptatum consectetur. Rerum, praesentium obcaecati? Error labore quasi voluptatibus
+            vitae. Unde maxime dignissimos ex! Quos optio sapiente a!
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="wander.png" alt="html" />
+          <div class="vertical-title">WanderLust - Software Developer (2023-2025)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ipsum
+            dignissimos. Ratione, voluptatum consectetur. Rerum, praesentium obcaecati? Error labore quasi voluptatibus
+            vitae. Unde maxime dignissimos ex! Quos optio sapiente a!
+          </div>
+        </div>
       </div>
     </section>
   </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Sneha's Portfolio</h3>
+        <p>&copy; 2025 Sneha. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Graphics Designer'],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 
 </html>
